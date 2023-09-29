@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('/assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+    font-weight: 500;
+}
+/* Medium Font */
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('/assets/fonts/static/HankenGrotesk-Bold.ttf');
+    font-weight: 800;
+}
+/* Bold Font */
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('/assets/fonts/static/HankenGrotesk-Medium.ttf');
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Hanken Grotesk';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Start Css */
+.box {
+    width: 500px;
+    height: 380px;
+    border-radius: 23px;
+    background-color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.073), 0 6px 20px 0 rgba(0, 0, 0, 0.073);
+       
+}
+.blue-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 23px;
+    width: 270px;
+    height: 380px;
+    background-image: 
+    linear-gradient(to top, #2e2be9 45% 22%, #7857ff 100%)
+  ;
+    text-align: center;
+    
+   }
+
+.circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    /* background-color: hsla(256, 72%, 46%, 1); */
+    background-image: 
+    linear-gradient(to bottom, #2e2be9 45% 22%, #7857ff 100%)
+  ;
+    line-height: 0;
+    text-align: center;
+    
+}
+.circle-text {
+    padding-top: 13px;
+}
+
+.total {
+    font-size: 0.8rem;
+}
+
+p , h3 {
+    color: hsl(241, 100%, 89%);
+      }
+p {
+    margin: 0px;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+h1 {
+   
+    color: white;
+    font-weight: 800;
+    font-size: 3.0rem;
+}
+h2 {
+    color: white;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+h3 {
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+.description {
+    padding-inline: 40px;
+    
+}
+/* Summary */
+.score-board {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.summary h2 {
+    margin-top: 35px;
+    font-weight: 500;
+    color: hsl(224, 30%, 27%);
+    font-size: 1.3rem;
+}
+
+.summary-counts {
+    padding-inline: 30px;
+}
+
+.boards p{
+   color: hsl(0, 100%, 67%);
+   font-weight: 800;
+    
+   }
+   img {
+    width: 15px;
+   }
+.boards {
+    background-color: hsla(0, 100%, 67%, 0.258);
+    padding: 10px;
+    width: 170px;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    
+}
+.reaction-heading {
+   color: hsl(0, 100%, 67%);
+   font-size: 0.8rem;
+   font-weight: 700;
+   margin-right: 40px;
+}
+
+.last p {
+    color: black;
+}
+.unbold{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.600);
+}
+
+.memory-board{
+    background-color: hsla(39, 100%, 56%, 0.258);
+}
+.memory-heading {
+    color: hsl(39, 100%, 56%);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-right: 42px;
+}
+
+.verbal-board{
+    background-color: hsla(166, 100%, 37%, 0.258);
+}
+.verbal-heading {
+    color: hsl(166, 100%, 37%);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-right: 52px;
+}
+
+.visual-board{
+    background-color: hsla(234, 85%, 45%, 0.258);
+}
+.visual-heading {
+    color: hsl(234, 85%, 45%);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-right: 53px;
+}
+
+.btn {
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 50px;
+    text-align: center;
+    margin: 20px 0px;
+    padding: 8px;
+    color: #ffff;
+}
+
+.btn:hover{
+    background-image: 
+    linear-gradient(to top, #2e2be9 45% 22%, #7857ff 100%)
+  ;
+}
+
+a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 375px){ 
+    .box {
+         width: 375px;
+         box-shadow: none;
+         height: 100%;
+         flex-wrap: wrap; 
+         
+        
+   } 
+
+   .blue-box {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       border-radius: 0px 0px 25px 25px;
+       width: 100%;
+       height: 300px;
+       background-image: linear-gradient(to top, #2e2be9 45% 22%, #7857ff 100%);
+       text-align: center;
+       padding: 10px 30px;
+       
+       
+      }
+
+      .description p {
+       margin-inline: 10px;
+       
+      }
+      .boards {
+       padding: 18px;
+       width: 270px;
+              
+   }
+.btn {
+   padding: 20px;
+}
+img {
+   width: 20px;
+  }
+.reaction-heading {
+  font-size: 1rem;
+  margin-right: 120px;
+}
+.memory-heading {
+   font-size: 1rem;
+  margin-right: 122px;
+}
+
+.visual-heading {
+   font-size: 1rem;
+   margin-right: 139px;
+}
+.verbal-heading {
+   font-size: 1rem;
+   margin-right: 135px;
+}
+
+}
